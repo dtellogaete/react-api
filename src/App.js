@@ -50,6 +50,8 @@ const App = () =>  {
 
     const suppliers = Array.from(new Set(items.map(item => item.clientActivity)))
     .filter(activity => activity);
+
+    /* Filtro items */
     
     const [filterItems, setFilterItems] = useState(items);
     const handleFilter = (event) => {
